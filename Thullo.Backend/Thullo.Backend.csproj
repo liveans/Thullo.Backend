@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="10.3.3" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="TanvirArjel.EFCore.GenericRepository" Version="5.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Thullo.Business\Thullo.Business.csproj" />
+    <ProjectReference Include="..\Thullo.DataAccess\Thullo.DataAccess.csproj" />
+    <ProjectReference Include="..\Thullo.Entities\Thullo.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
